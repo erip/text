@@ -5,7 +5,7 @@ import unittest
 from torchtext._internal.module_utils import is_module_available
 
 
-class TempDirMixin:
+class TempDirMixin(unittest.TestCase):
     """Mixin to provide easy access to temp dir"""
 
     temp_dir_ = None
